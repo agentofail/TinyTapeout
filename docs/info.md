@@ -11,6 +11,10 @@ You can also include images in this folder and reference them in the markdown. E
 
 This Project implements a simple XOR cipher. A Key can be loaded into a 8 deep shift register. A leading head of ones is used to detect setting the key. Afterwards the message supplied at the input pins is taken xor with the loaded key. The output is displayed. The key repeats after encrypting 8 times 8 bits.
 
+DISCLAIMER:  Do not use this implementation for encrypting anything relevant. XOR encryption by itself, using a constant repeating key, can for example be trivially broken using a frequency analysis.
+
+
+
 ## How to test
 
 Upon initialization output bits 7 and 8 should be high, anything else low. Note that this may depend on the starting values of the FlipFlops used in the shift register and therefor is not 100% certain.
